@@ -1,6 +1,7 @@
 import { useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "../../contexts/login-context";
+import "./login.scss";
 
 const Login = () => {
 
@@ -39,20 +40,22 @@ return res.json()
 })
 .then(data => {
 setToken(data.token);
-navigate("/");
+navigate("/albums");
 })
 .catch(e => setError(e.message))
 .finally(() => setLoading(false))
 }
 }
-
     return (
-    <form onSubmit={handleFormSubmit}>
-    <input ref={emailRef} aria-label="Email" type="email" />
-    <input ref={passwordRef} aria-label="Password" type="password" />
-    <button disabled={loading} type="submit">Submit</button>
-    <span style={{color: "red"}}>{error}</span>
+  <>
+    <h1 className="login-title">Login</h1>
+    <form className="login-form" onSubmit={handleFormSubmit}>
+    <input className="login-input" ref={emailRef} placeholder="Login" aria-label="Email" type="email" />
+    <input className="login-input" ref={passwordRef} placeholder="Password" aria-label="Password" type="password" />
+    <button className="login-btn" disabled={loading} type="submit">Submit</button>
+    <strong className="login-error">{error}</strong>
     </form>
+  </>
     );
 }
 
