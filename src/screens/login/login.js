@@ -40,7 +40,7 @@ return res.json()
 })
 .then(data => {
 setToken(data.token);
-navigate("/albums");
+navigate("/posts");
 })
 .catch(e => setError(e.message))
 .finally(() => setLoading(false))
@@ -48,7 +48,7 @@ navigate("/albums");
 }
     return (
   <>
-    <h1 className="login-title">Login</h1>
+  <h1 className="login-title">Login</h1>
     <form className="login-form" onSubmit={handleFormSubmit}>
     <input className="login-input" ref={emailRef} placeholder="Login" aria-label="Email" type="email" />
     <input className="login-input" ref={passwordRef} placeholder="Password" aria-label="Password" type="password" />
