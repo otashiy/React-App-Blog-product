@@ -4,7 +4,7 @@ import NotFound from "./screens/not-found/not-found";
 import Login from "./screens/login/login";
 import PostsProvider from "./contexts/posts";
 import Posts from "./screens/posts/posts";
-import EditingPosts from "./screens/editing-posts/editing-posts";
+import Post from "./screens/post/post";
 
 
 
@@ -15,7 +15,7 @@ function App() {
       <Route path="/" element={<Main />} />
       <Route path="/login" element={<Login />} />
       <Route path="/posts" element={<Posts />} />
-      <Route path="/editing-posts/:id" element={<EditingPosts />} />
+      <Route path="/post/:id" element={<Post />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
 </PostsProvider>

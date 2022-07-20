@@ -1,19 +1,25 @@
 .main-link {
 display: block;
+width: 180px;
 margin: auto;
 margin-top: 100px;
 text-decoration: none;
-color: black;
+background-color: black;
 font-size: 46px;
 text-align: center;
+border-radius: 10px;
+color: #fff;
 }
 
 .main-link:hover {
-text-decoration: underline;
+background-color: #ccc;
+color: #000;
+transition: 1s all ease;
 }
 
 .main-link:active {
-color: #ccc;
+background-color: #Fff;
+border: 1px solid;
 }
 
 .main-title {

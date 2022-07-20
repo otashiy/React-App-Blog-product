@@ -1,6 +1,5 @@
 import Arrays from "../../components/arrays/arrays";
 
-
 const Posts = () => {
     return (
     <>
