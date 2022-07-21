@@ -4,11 +4,12 @@ import "./footer.scss";
 const Footer = () => {
     return (
     <footer className="footer">
-   <div className="footer-container">
+   <Container className="footer__container">
    <a href="/">
     <img src="../../assets/images/footer-icon.svg" alt="footer-icon" width={182} height={70} />
     </a>
-    <div>
+   <div className="footer__wrapper">
+   <div>
         <ul>
             <li>
                 <a href="https://twitter.com">Twitter</a>
@@ -61,6 +62,7 @@ const Footer = () => {
         </ul>
     </div>
    </div>
+    </Container>
     </footer>
     );
 };

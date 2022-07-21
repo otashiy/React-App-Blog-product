@@ -1,9 +1,12 @@
 import Arrays from "../../components/arrays/arrays";
+import Container from "../../components/container/container";
 
 const Posts = () => {
     return (
     <>
-     <Arrays />
+    <Container>
+    <Arrays />
+    </Container>
     </>
     );
 }
