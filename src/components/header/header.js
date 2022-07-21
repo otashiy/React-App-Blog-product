@@ -1,24 +1,20 @@
-import { useContext } from "react";
-import { PostsContext } from "../../contexts/posts";
+
 import Container from "../container/container";
 import "./header.scss";
+import logo from "../../assets/images/site-logo.svg";
 
-const Header = () => {
+const Header = ({children}) => {
 
-const { posts } = useContext(PostsContext);
 
     return (
-   <Container className="header__container">
-         <ul>
-        {posts.map(post => {
-            return (
-                <li>
-                    <span>{post?.type}</span>
-                </li>
-            )
-        })}
-        </ul>
+  <header>
+     <Container className="header__container">
+    <a href="/">
+        <img src={logo} alt="site-logo" width={209} height={58} />
+    </a>
+    {children}
    </Container>
+  </header>
     );
 }
 

@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import Container from "../../components/container/container";
+import Header from "../../components/header/header";
 import "./main.scss";
 
 const Main = () => {
     return (
         <>
-      <h1 className="main-title">Welcome to my blog!</h1>
+      <Header>
       <Link className="main-link" to={"/login"}>Log in</Link>
+      </Header>
         </>
     );
 }

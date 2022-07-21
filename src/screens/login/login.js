@@ -1,5 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../../components/header/header";
 import { LoginContext } from "../../contexts/login-context";
 import "./login.scss";
 
@@ -48,7 +49,7 @@ navigate("/posts");
 }
     return (
   <>
-  <h1 className="login-title">Login</h1>
+    <Header />
     <form className="login-form" onSubmit={handleFormSubmit}>
     <input className="login-input" ref={emailRef} placeholder="Login" aria-label="Email" type="email" />
     <input className="login-input" ref={passwordRef} placeholder="Password" aria-label="Password" type="password" />

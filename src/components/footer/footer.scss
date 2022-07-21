@@ -14,7 +14,23 @@ align-items: center;
 width: 660px;
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 margin-left: 397px;
 }
 
+.footer__link {
+text-decoration: none;
+color: #fff;
+
+&:hover {
+border-bottom: 1px solid #fff;
+}
+}
+
+.footer__item {
+margin-bottom: 15px;
+
+&:last-child {
+margin-bottom: unset;
+}
+}

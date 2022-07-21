@@ -26,7 +26,9 @@ const PostsProvider = (props) => {
     ...post,
     likes: getRndInteger(0, 100),
     date: new Date(`${getRndInteger(2001, 2023)}-${getRndInteger(1, 12)}-${getRndInteger(1, 28)}`).toString(),
-    type: types[getRndInteger(0, 8)]
+    type: types[getRndInteger(0, 8)],
+    share: getRndInteger(0, 100),
+    
     }
     }))
     })

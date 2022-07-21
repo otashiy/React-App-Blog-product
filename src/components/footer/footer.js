@@ -1,63 +1,64 @@
 import Container from "../container/container";
 import "./footer.scss";
+import footerLogo from "../../assets/images/footer-logo.svg";
 
 const Footer = () => {
     return (
     <footer className="footer">
    <Container className="footer__container">
    <a href="/">
-    <img src="../../assets/images/footer-icon.svg" alt="footer-icon" width={182} height={70} />
+    <img src={footerLogo} alt="footer-icon" width={182} height={70} />
     </a>
    <div className="footer__wrapper">
    <div>
         <ul>
-            <li>
-                <a href="https://twitter.com">Twitter</a>
+            <li className="footer__item">
+                <a className="footer__link" target={"_blank"} href="https://twitter.com">Twitter</a>
             </li>
-            <li>
-                <a href="https://instagram.com">Instagram</a>
+            <li className="footer__item">
+                <a className="footer__link" target={"_blank"} href="https://instagram.com">Instagram</a>
             </li>
-            <li>
-                <a href="https://telegram.com">Telegram</a>
+            <li className="footer__item">
+                <a className="footer__link" target={"_blank"} href="https://telegram.com">Telegram</a>
             </li>
-            <li>
-                <a href="https://youtube.com">YouTube</a>
+            <li className="footer__item">
+                <a className="footer__link" target={"_blank"} href="https://youtube.com">YouTube</a>
             </li>
-            <li>
-                <a href="https://figma.com">Figma</a>
+            <li className="footer__item">
+                <a className="footer__link"  target={"_blank"} href="https://figma.com">Figma</a>
             </li>
         </ul>
     </div>
     <div>
         <ul>
-            <li>
-                <a href="">Xalq Kutubxonasi</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Xalq Kutubxonasi</a>
             </li>
-            <li>
-                <a href="">Websitee</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Websitee</a>
             </li>
-            <li>
-                <a href="">Website</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Website</a>
             </li>
-            <li>
-                <a href="">Play Market</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Play Market</a>
             </li>
-            <li>
-                <a href="">App Store</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">App Store</a>
             </li>
         </ul>
     </div>
 
     <div>
         <ul>
-            <li>
-                <a href="">Blog</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Blog</a>
             </li>
-            <li>
-                <a href="">Dribble</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Dribble</a>
             </li>
-            <li>
-                <a href="">Behance</a>
+            <li className="footer__item">
+                <a className="footer__link" href="">Behance</a>
             </li>
         </ul>
     </div>
