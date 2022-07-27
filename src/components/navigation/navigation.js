@@ -1,3 +1,4 @@
+import Search from "../search/search";
 import "./navigation.scss";
 
 const Navigation = () => {
@@ -22,10 +23,7 @@ const Navigation = () => {
         </li>
         </ul>
         </nav>
-        <form className="navbar__form">
-            <input className="navbar__form-input" type="search" aria-label="search" placeholder="search" />
-            <button className="navbar__form-btn"></button>
-        </form>
+        <Search />
         </>
     );
 };

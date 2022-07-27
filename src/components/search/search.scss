@@ -1,0 +1,32 @@
+.navbar__form-input {
+padding: 12px 14px;
+border-radius: 10px;
+border: none;
+background-color: #F4F4F4;
+}
+
+.navbar__form {
+position: relative;
+}
+
+.navbar__form-btn {
+padding: 0;
+padding: 12px;
+background-color: #FFBA9D;
+position: absolute;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+border: none;
+border-radius: 10px;
+}
+
+.navbar__form-btn::after {
+    width: 16px;
+    height: 16px;
+    display: block;
+    content: "";
+    background-image: url("../../assets/images/search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
