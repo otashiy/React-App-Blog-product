@@ -1,0 +1,134 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.post-item {
+  width: 736px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.post-subtitle {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #474747;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.post-time {
+  width: 116px;
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+
+.post-like {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+
+.post-desc {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: #777777;
+}
+
+.post-type {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+
+.post-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0 45px;
+  width: 170px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-img {
+  margin-bottom: 50px;
+}
+
+.post-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 64px;
+  margin-top: 30px;
+}
+
+.post-inner-likes {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.post-inner-likes::before {
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url("../../assets/images/hand-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  content: "";
+}
+
+.post-inner-share {
+  position: relative;
+}
+
+.post-inner-share::before {
+  display: block;
+  width: 18px;
+  height: 20px;
+  content: "";
+  background-image: url("../../assets/images/share-icon.svg");
+  background-repeat: no-repeat;
+  top: -15px;
+}
+
+.post-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=post.css.map */

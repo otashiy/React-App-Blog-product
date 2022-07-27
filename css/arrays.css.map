@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACd,UAAU,EAAE,MAAM;EAElB,WAAW,EAAE,aAAa;EAC1B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EAEjB,KAAK,EAAE,OAAO;CACb",
+    "sources": [
+        "../src/components/arrays/arrays.scss"
+    ],
+    "names": [],
+    "file": "arrays.css"
+}
